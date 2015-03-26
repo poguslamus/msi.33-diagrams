@@ -1,0 +1,28 @@
+@startuml
+
+'Pièce 9
+(*) --> "<b>Assiègement de la seconde garde en schutzen</b>\n<img:images/msI.33/P09E1 - §033.jpg>" as assiegement
+assiegement --> [suite] "<b>schutzen contre schutzen</b>\n<img:images/msI.33/P09E2 - §034.jpg>\n<i>Chacun peut effectuer les suites</i>" as schutzenvsschutzen
+
+schutzenvsschutzen --> [suite] "<b>Coup à gauche</b>\n<i>Non illustré</i>" as coupgauche
+schutzenvsschutzen --> [suite] "<b>Coup à droite</b>\n<i>Non illustré</i>" as coupdroit
+schutzenvsschutzen --> [suite] "<b>Passage</b>\n<img:images/msI.33/P09E3 - §035.jpg>" as passage
+
+'3 possibilités
+passage --> [contre] "<b>Liage à gauche</b>\n<i>au début passage</i>\n<img:images/msI.33/P09E4 - §036.jpg>" as liagegauche
+coupdroit-->[contre]"<b>Coup aux mains en passant en 1ère garde</b>\n<i>Non illustrée</i>" as coupauxmains
+coupgauche-->[contre]coupauxmains
+
+liagegauche-->[contre]"<b>Coup de pointe</b>\n<img:images/msI.33/P09E5 - §037.jpg>" as coupdepointe
+
+coupauxmains --> (*)
+coupdepointe --> (*)
+
+'Pièce 10
+assiegement-->[suite]"<b>Coup de pointe à la tête</b>\n<img:images/msI.33/P10E2 - §039.jpg>" as couptete
+couptete-->(*)
+
+'Layout
+couptete-right[hidden]->schutzenvsschutzen
+
+@enduml

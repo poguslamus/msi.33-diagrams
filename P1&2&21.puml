@@ -1,0 +1,49 @@
+@startuml
+(*) --> "<b>Assiégement de la 1ère garde en demi-bocle</b>\n<img:images/msI.33/P01E1 - §005.jpg>" as assiegementdemibocle1ere
+assiegementdemibocle1ere -->[contre] "<b>Coup bas</b>\n<i>Non illustré</i>" as coupbas
+assiegementdemibocle1ere-->[suite]"<b>Coup de pointe</b>\n<i>Non illustré</i>" as couppointe
+assiegementdemibocle1ere-right->[contre]"<b>Plongée sous la demi-bocle</b>\n<img:images/msI.33/P01E2 - §006.jpg>" as plongee
+
+coupbas --> "<b>Coup à la tête</b>\n<i>Non illustré</i>" as couptete
+
+plongee-right->[contre]"Liage supérieur droit\n<img:images/msI.33/P01E3 - §007.jpg>" as liagesupdroit
+plongee-->[contre]"<b>Coup à la tête</b>\n<i>Non illustré</i>" as coupteteordinaire
+
+liagesupdroit-right->[suite]"Coup de bocle et coup à la tête\n<img:images/msI.33/P01E4 - §008.jpg>" as coupboclecouptete
+liagesupdroit-->[suite]"<b>Encerclement des bras avec la main gauche</b>\nEn tournant le dos\n<img:images/msI.33/P21E3 - §071.jpg>" as encerclementgauche
+liagesupdroit-->[contre]"<b>Mutation</b>\n<img:images/msI.33/P02E4 - §012.jpg>" as mutation
+liagesupdroit-->[contre]"<b>Passage</b>\n<img:images/msI.33/P09E3 - §035.jpg>" as passage
+liagesupdroit-->[contre]"<b>Encerclement des bras avec la main droite</b>\nEn tournant le dos?\n\n<i>Non illustré</i>" as encerclementdroit
+
+mutation-->[suite]"<b>Nuckem</b>\nCoup séparant l'épée et la bocle\n<img:images/msI.33/P02E5 - §013.jpg>" as nuckem
+
+encerclementgauche-->[contre] "<b>Lutte</b>\n<img:images/msI.33/P21E4 - §072.jpg>" as lutte
+lutte-->[contre] "<b>Volte</b>\n<img:images/msI.33/P21E5 - §073.jpg>" as volte
+
+volte-->(*)
+encerclementdroit-->(*)
+coupboclecouptete-->(*)
+couptete --> (*)
+couppointe-->(*)
+coupteteordinaire-->(*)
+passage-->(*)
+nuckem-->(*)
+
+'======
+'Layout
+'======
+'First line
+encerclementgauche-right[hidden]->encerclementdroit
+encerclementdroit-right[hidden]->mutation
+mutation-right[hidden]->passage
+coupteteordinaire-right[hidden]->encerclementgauche
+coupbas-right[hidden]->coupteteordinaire
+
+'second line
+lutte-right[hidden]->nuckem
+'couptete-right[hidden]->lutte
+couptete-up[hidden]->coupbas
+coupbas-right[hidden]->couppointe
+couppointe-right[hidden]->coupteteordinaire
+
+@enduml

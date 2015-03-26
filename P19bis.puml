@@ -1,0 +1,18 @@
+@startuml
+
+(*) --> "<b>Longue pointe assiégeant 1ère garde</b>\n<img:images/msI.33/P19E1 - §062.jpg>" as langortvsprima
+langortvsprima --> "<b>Saisie de la lame</b>\n<img:images/msI.33/P19E2 - §063.jpg>" as saisielame
+saisielame --> "<b>Désarmement grâce à un coup de pied</b>\n<img:images/Cod.icon. 393/24.jpg>" as desarmementcouppied
+desarmementcouppied --> "<b>Saisie jambe et coup de bocle contre le désarmement</b>\n<img:images/Cod.icon. 393/25.jpg>" as contredesarmement
+saisielame --> "<b>Dégagement de la lame grâce à un coup de bocle sur la main</b>\n<img:images/msI.33/P19E3 - §064.jpg>" as degagementlame
+degagementlame --> "<b>Saisie de la bocle en protégeant contre un coup</b>\n<img:images/Cod.icon. 393/42.jpg>" as saisiebocle
+saisiebocle --> "<b>Saisie de barbe</b>\n<img:images/Cod.icon. 393/30.jpg>" as saisiebarbe
+saisiebocle --> "<b>Coup et protection contre le coup, puis entrée en lutte</b>\n<img:images/Cod.icon. 393/41.jpg>" as lutte
+
+saisiebarbe --> (*)
+contredesarmement --> (*)
+lutte --> (*)
+
+saisiebarbe-left[hidden]->contredesarmement
+
+@enduml
