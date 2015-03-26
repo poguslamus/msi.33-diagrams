@@ -1,0 +1,9 @@
+@startuml
+(*)  --> "<b>Assiégement de la 5ème garde en demi-bocle</b>\n<img:images/msI.33/P36E1 - §107.jpg>" as assiegement5demibocle
+assiegement5demibocle-->"<b>Pique</b>\n<img:images/msI.33/P36E2 - §108.jpg>" as pique
+pique-->"<b>Protection et coup</b>\nProtection : schutzen / reliage sup droit?\n<img:images/msI.33/P36E3 - §109.jpg>" as protectionetcoup
+pique-->"<b>Défense contre la pique</b>\n<img:images/msI.33/P37E3 - §112.jpg>" as defensepique
+defensepique-->"<b>Coup de bocle et coup à la tête</b>\n<img:images/msI.33/P37E4 - §113.jpg>" as coupbocle
+coupbocle-->(*)
+protectionetcoup-->(*)
+@enduml
