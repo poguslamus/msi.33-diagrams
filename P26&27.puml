@@ -1,0 +1,7 @@
+@startuml
+(*)  --> "<b>Assiégement de la garde de l'archet en longue pointe</b>\n<img:images/msI.33/P26E1 - §085.jpg>" as archet
+archet-->"<b>Saisie de la pointe, coup et désarmement</b>\n<img:images/msI.33/P26E2 - §086.jpg>" as desarmement
+archet-->"<b>Liage supérieur droit</b>\n<img:images/msI.33/P27E2 - §088.jpg>" as liagesupdroit
+liagesupdroit-->"<b>Coup de bocle et coup à la tête</b>\n<img:images/msI.33/P27E3 - §089.jpg>" as coupbocle
+coupbocle-->(*)
+@enduml

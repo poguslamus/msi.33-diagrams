@@ -6,7 +6,7 @@ assiegementdemibocle1ere-right->[contre]"<b>Plongée sous la demi-bocle</b>\n<im
 
 coupbas --> "<b>Coup à la tête</b>\n<i>Non illustré</i>" as couptete
 
-plongee-right->[contre]"Liage supérieur droit\n<img:images/msI.33/P01E3 - §007.jpg>" as liagesupdroit
+plongee-right->[contre]"<b>Liage supérieur droit</b>\n<img:images/msI.33/P01E3 - §007.jpg>" as liagesupdroit
 plongee-->[contre]"<b>Coup à la tête</b>\n<i>Non illustré</i>" as coupteteordinaire
 
 liagesupdroit-right->[suite]"Coup de bocle et coup à la tête\n<img:images/msI.33/P01E4 - §008.jpg>" as coupboclecouptete
