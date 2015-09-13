@@ -10,9 +10,9 @@ plongee-right->[contre]"<b>Liage supérieur droit</b>\n<img:images/msI.33/P01E3 
 plongee-->[contre]"<b>Coup à la tête</b>\n<i>Non illustré</i>" as coupteteordinaire
 
 liagesupdroit-right->[suite]"Coup de bocle et coup à la tête\n<img:images/msI.33/P01E4 - §008.jpg>" as coupboclecouptete
-liagesupdroit-->[suite]"<b>Encerclement des bras avec la main gauche</b>\nEn tournant le dos\n<img:images/msI.33/P21E3 - §071.jpg>" as encerclementgauche
+liagesupdroit-->[suite]"<b>Encerclement des bras avec la main gauche</b>\nDe face\n<img:images/msI.33/P03E3 - §016.jpg>" as encerclementgauche
 liagesupdroit-->[contre]"<b>Mutation</b>\n<img:images/msI.33/P02E4 - §012.jpg>" as mutation
-liagesupdroit-->[contre]"<b>Passage</b>\n<img:images/msI.33/P09E3 - §035.jpg>" as passage
+liagesupdroit-->[contre]"<b>Passage</b>\nP39" as passage
 liagesupdroit-->[contre]"<b>Encerclement des bras avec la main droite</b>\nEn tournant le dos?\n\n<i>Non illustré</i>" as encerclementdroit
 
 mutation-->[suite]"<b>Nuckem</b>\nCoup séparant l'épée et la bocle\n<img:images/msI.33/P02E5 - §013.jpg>" as nuckem
